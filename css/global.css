@@ -1,0 +1,118 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #DC0A2D;
+    --bug: #A7B723;
+    --dark: #75574c;
+    --dragon: #7037FF;
+    --electric: #F9CF30;
+    --fairy: #E69EAC;
+    --fighting: #C12239;
+    --fire: #F57D31;
+    --flying: #A891EC;
+    --ghost: #70559B;
+    --normal: #AAA67F;
+    --grass: #74CB48;
+    --gound: #DEC16B;
+    --ice: #9AD6DF;
+    --poison: #A43E93;
+    --psychic: #FB5584;
+    --rock: #B69E31;
+    --stell: #B7B9D0;
+    --water: #6493EB;
+    --dark: #212121;
+    --medium: #666666;
+    --light: #E0E0E0;
+    --background: #EFEFEF;
+    --white: #fff; 
+}
+body {
+    background-color: var(--primary);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 1rem;
+    max-width: 1120px;
+    height: auto;
+    border-radius: 1rem;
+}
+.content-Header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+.content-title{
+    color: var(--background)
+}
+a {
+    text-decoration: none;
+    color: var(--background);
+}
+.content-desc {
+    color: var(--background);
+}
+.content-Search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+input {
+    width: 280px;
+    height: 32px;
+    padding: 8px 0px 8px 32px;
+    border-radius: 16px;
+    outline: 0;
+    color: var(--medium);
+    font-size: 10px;
+    font-weight: 500;
+    border-color: none;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
+}
+input:focus {
+    outline: 0;
+    border: none;
+    border-color: none;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.20);
+}
+.lupa {
+    position: absolute;
+    width: 35px;
+    height: 35px;    
+    transform: scale(-50%, 50%);
+    cursor: pointer;
+    color: var(--primary);
+}
+.content-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    background: var(--grayscale-white, #FFF);
+/* Inner Shadow/2 dp */
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
+}
+.content-btn:hover {
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.20);
+}
+
+.card-content{
+    background-color: var(--background);
+    padding: 24px 6px 24px 6px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
